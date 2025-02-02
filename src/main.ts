@@ -13,5 +13,9 @@ async function bootstrap() {
 
   await app.listen(3000);
   customlogger.debug(`Application is running on: ${await app.getUrl()}`);
+
+  //   const logger = new WinstonLogger();
+  //   const appUrl = await app.getUrl();
+  //   logger.info(`Application is running on: ${appUrl}`);
 }
 bootstrap();
